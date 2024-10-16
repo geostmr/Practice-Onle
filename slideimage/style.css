@@ -1,0 +1,186 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/bg1.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.nav{
+    width: 90%;
+    /* background-color: aqua; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+
+.nav .logo{
+    width: 60px;
+    margin: 30px 0;
+    cursor: pointer;
+
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user img{
+    width: 30px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+button{
+    padding: 8px 25px;
+    background: transparent;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container{
+    width: 50%;
+    height: 100vh;
+    background: rgba(86, 86, 86, 0.3);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+/* .info{
+    background: hsl(0, 1%, 62%);
+    width: 550px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 50%;
+   
+    transform: translatey(-60%);
+} */
+
+.info {
+    /* background: hsl(0, 1%, 62%); */
+    width: 550px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.info h1{
+    font-size: 60px;
+    letter-spacing: 10px;
+}
+
+.info p{
+    color: #f0eef1;
+    font-size: 20px;
+    margin: 20px 0;
+    line-height: 28px;
+}
+
+.info input{
+    width: 50%;
+    padding: 8px 10px;
+    outline: none;
+    border: 2px solid #fff;
+    background: transparent;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+.slider{
+    /* background: #000; */
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    bottom: 60px;
+}
+
+#next, #prev{
+    width: 30px;
+    cursor: pointer;
+}
+
+.preview{
+    display: flex;
+    align-items: center;
+    margin: 0 60;
+}
+
+.preview img{
+    width: 100px;
+    margin: 0 20px;
+    opacity: 0.4;
+   
+}
+
+.preview .active{
+
+    display: block;
+    width: 150px;
+    border: 3px solid #fff;
+    opacity: 1;
+}
+.preview.active {
+    display: block;
+    border: 3px solid black; /* Adds a solid black border */
+}
+
+@media screen and (max-width: 850px) {
+
+    .container{
+      width: 30vh;
+      display: none;  
+      margin: 0 auto;
+    }
+}  
+
+
+@media screen and (max-width: 1500px) {
+    .slider{
+        .container{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+          }
+      
+    }
+      
+}
+@media screen and (max-width: 450px) {
+
+   
+     
+    #img5{
+
+        display: none;
+
+    }
+    
+}
