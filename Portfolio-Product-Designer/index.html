@@ -11,8 +11,8 @@
 </head>
 <body>
     <!-- HEADER/NAVBAR -->
-    <div class="header">
-        <nav>
+    <div class="header " >
+        <nav class="reveal-top">
         <h1 class="logo"><span>G</span>EO</h1>
             <ul>
                 
@@ -32,14 +32,14 @@
 
         <section class="hero" id="home">
 
-            <div class="main-content">
+            <div class="main-content reveal-left">
               <h2>Hello, I’m Geo,</h2>
               <h1>Product Designer</h1>
               <h2>base in Philippines.</h2>
              <div class="btn"><button onclick="location.href='#contact'">Contact me</button></div>
             </div>
 
-            <div class="hero-img">
+            <div class="hero-img reveal-right">
                 <img src="./img/me.jpg" alt="">
             </div>
 
@@ -47,24 +47,24 @@
         </section>
 
     <!-- ABOUT SECTION -->
-        <section class="about" id="about">
+        <section class="about reveal-bottom" id="about">
             <div class="about-details">
             <h1>ABOUT</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate <br> tristique quam felis. 
                 Id phasellus dui orci vulputate consequat nulla proin. <br> Id sit scelerisque neque, proin brbibendum diam</p>
             </div>
             <div class="info">
-                <div class="div-info 2014">
+                <div class="div-info 2014 reveal-left">
                     <h4>2014-2018</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate <br> tristique quam felis. 
                     Id phasellus dui orci vulputate consequat nulla proin. <br> Id sit scelerisque neque, proin brbibendum diam</p>
                 </div>
-                <div class="div-info 2019">
+                <div class="div-info 2019 reveal-right">
                     <h4>2018-2019</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate <br> tristique quam felis. 
                     Id phasellus dui orci vulputate consequat nulla proin. <br> Id sit scelerisque neque, proin brbibendum diam</p>
                 </div>
-                <div class="div-inf 2010">
+                <div class="div-inf 2010 reveal-bottom">
                     <h4>2020</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate <br> tristique quam felis. 
                     Id phasellus dui orci vulputate consequat nulla proin. <br> Id sit scelerisque neque, proin brbibendum diam</p>
@@ -74,12 +74,12 @@
 
     <!-- WORK SECTION -->
      <section class="work" id="work">
-        <div class="work-captions">
+        <div class="work-captions reveal-bottom">
             <h1>WORK</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate <br> tristique quam felis.
                 Id phasellus dui orci vulputate consequat nulla proin. <br> Id sit scelerisque neque, proin bibendum diam.</p>
         </div>
-        <div class="case-study-container">
+        <div class="case-study-container reveal-bottom">
             <div class="case-study">
                 <img src="./img/case-study.png" alt="">
                 <p><small>November 24, 2019</small></p>
@@ -88,7 +88,7 @@
                     Ut sed <br> aliquam sollicitudin rhoncus morbi. Tincidunt quam sem elit a <br> convallis.
                      Eget ipsum, velit vitae eu nunc, consequat, at.</p>
             </div>
-            <div class="case-study">
+            <div class="case-study reveal-bottom">
                 <img src="./img/case-study-2.png" alt="">
                 <p><small>November 24, 2019</small></p>
                 <h4>Some Case Study</h4>
@@ -100,7 +100,7 @@
      </section>
 
      <!-- CONTACT SECTION -->
-      <section class="contact" id="contact"> 
+      <section class="contact reveal-left" id="contact"> 
         <h1>CONTACT</h1>
         <div class="contact-info">
             <img src="./img/contact.png" alt="">
@@ -120,5 +120,9 @@
       </section>
 
     </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+
 </body>
 </html>
