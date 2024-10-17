@@ -1,0 +1,199 @@
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    /* RESET STYLING  */
+    h1{
+        color: #333333;
+    }
+
+    p{
+        color: #333333;
+    }
+
+    a{
+        color: #333333;
+        text-decoration: none;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+    body{
+        max-width: 100%;
+        padding: 30px 50px;
+        overflow-x: hidden;
+    
+        
+    }
+
+    /* HEADER SECTION STYLING */
+    .header{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo h1{
+        font-size: 42px;
+        font-weight: 4500;
+        color: #66AC66;
+    }
+    #menuBtn{
+        display: none;
+    
+    }
+
+    nav ul{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        font-size: 24px;
+    }
+    nav ul li a{
+        font-size: 30px;
+        transition: 0.3s ease-in-out;
+    }
+    nav ul li a:hover{
+        color: #66AC66;
+    }
+    nav button{
+        width: 93px;
+        height: 40px;
+        border-radius: 4px;
+        background-color: #66AC66;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        transition: 0.5s ease-in-out;
+    }
+
+    nav button:hover{
+        background-color: #1d1c1c;
+    }
+    /* HERO SECTION STYLING */
+    .hero{
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 200px;
+        position: relative;
+
+    }
+    .hero-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero h1{
+        font-size: 48px;
+    }
+    .hero p{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .hero button{
+        width: 350px;
+        height: 73px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 150px;
+        background-color: #66AC66;
+        border: none;
+        border-radius: 4px;
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        transition: 0.3s ease-in-out;
+        text-transform: uppercase;
+    }
+    .hero button:hover{
+        background-color: #363535;
+
+    }
+
+
+    @media screen and (max-width: 1150px) {
+    
+        .header{
+            width: 100%;
+        }
+    
+        nav ul{
+            height: 100vh;
+            width: 100%;
+            position: absolute; 
+            left: 0; 
+            right: 0;
+            top: -100%;
+            margin-inline: auto; 
+            display: flex;
+            flex-direction: column;
+            backdrop-filter: blur(20px);
+            padding-top: 200px;
+            transition: 0.3s ease-in-out;
+            z-index: 999;
+        }
+
+        #menuBtn{
+            display: block;
+            z-index: 999;
+        }
+        nav ul.active{
+            top: 0;
+        
+
+        } 
+
+        .hero{
+            gap: 10px;
+        }
+        
+        
+        
+        
+
+    }
+
+  
+    @media screen and (max-width: 1000px) {
+        
+
+        .hero-img{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .hero-content{
+            position: absolute;
+            left: 0;
+            top: 150px;
+        }
+
+    }
+
+    @media screen and (max-width: 900px) {
+
+        .hero-img{
+            position: absolute;
+           
+            right: -120px;
+        }
+       
+    }
+
+    @media screen and (max-width: 750px) {
+
+        .hero-img{
+            position: absolute;
+           
+            right: -230px;
+        }
+        .hero h1{
+            font-size: 35px;
+        }
+    }
