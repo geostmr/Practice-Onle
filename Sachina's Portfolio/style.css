@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* RESET STYLING */
+h1{
+    color: #018DB0;
+}
+p{
+ color: #018DB0;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 80%;
+    font-family: "Poppins";
+    background-color: #fff;
+}
+
+/* HEADER/NAVBAR STYLING */
+.nav-bar{
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.logo img{
+    width: 300px;
+    top: -2px;
+    position: absolute;
+    
+}
+.menu-btn{
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
+    gap: 50px;
+}
+.nav-bar span{
+    margin-right: 10px;
+}
+.nav-bar ul li a{
+    font-size: 24px;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.nav-bar ul li a:hover{
+    color: #D1884F;
+}
+
+/* HERO SECTION STYLING */
+.hero{
+    max-height: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero span{
+    font-size: 32px;
+    color: #018DB0;
+}
+
+.hero .content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.hero .content-container .design{
+    color: #D1884F;
+    font-size: 67px;
+}
+.hero .content-container p{
+     font-size: 24px;
+
+}
+.hero .content-container h1{
+    font-size: 67px;
+}
+.hero .content-container .btn-1{
+    width: 205px;
+    height: 55px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 32px;
+    background-color: #018DB0;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+.hero .content-container .btn-1:hover{
+    background-color: #D1884F;
+}
+.hero .content-container .btn-2{
+    width: 299px;
+    height: 55px;
+    border-radius: 8px;
+    color: #018DB0;
+    font-size: 32px;
+    background-color: transparent;
+    border: 2px solid #018DB0;
+    transition: 0.3s ease-in-out;
+}
+.hero .content-container .btn-2:hover{
+    background-color: #070707;
+    color: #fff;
+}
+.hero-btn{
+    display: flex;
+    gap: 30px;
+}
+
+
+.hero img{
+    width: 438px;
+    height: 464px;
+    filter: drop-shadow(-6mm 5mm 0 #3BBADB);
+}
+
+@media screen and (max-width: 1335px) {
+    .menu-btn{
+        display: block;
+    }
+    .nav-bar ul{
+        display: none;
+    }
+    .logo img{
+        transition: 0.3s ease-in-out;
+        margin-left: -130px;
+        top: -20px;
+
+    }
+    .hero{
+        margin-top: 15px;
+        flex-direction: column-reverse;
+        align-items: center ;
+        gap: 30px;
+        transition: 0.3s ease-in-out;
+    }
+    .hero img{
+        width: 338px;
+        height: 364px;
+        filter: drop-shadow(-6mm 5mm 0 #3BBADB);
+    }
+    .hero .content-container h1{
+        font-size: 40px;
+    }
+    .hero .content-container .design{
+        color: #D1884F;
+        font-size: 40px;
+    }
+    .hero .content-container p{
+        font-size: 18px;
+    }
+    
+    .hero .content-container .btn-2{
+        width: 199px;
+        height: 55px;
+        font-size: 18px;
+       
+    }
+    .hero .content-container .btn-1{
+        width: 199px;
+        height: 55px;
+        font-size: 18px;
+       
+    }
+    
+}
